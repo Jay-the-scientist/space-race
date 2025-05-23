@@ -8,29 +8,26 @@ SpaceX aims to reduce costs through reuse of Falcon 9 first stages. However, lan
 
 ## Installation
 
-Required packages include:
--Pandas 
--NumPy 
--SciPy 
--Scikit-Learn 
--Matplotlib 
--Folium
+Required packages can be  installed using:
+```bash
+pip install pandas numpy scipy sklearn matplotlib folium
+```
 
 ## Data
 Launch records were obtained from SpaceX API and Wikipedia pages. Over 100 entries contained attributes on payload, orbit, site, booster, outcome details.
 
-<!-- ![Raw Data](images/dataprep/1-rawdata.png) -->
+![Raw Data](images/dataprep/1-rawdata.png)
 
 ## Methodology
 Data wrangling cleaned and standardized values. EDA explored relationships. Models like Logistic Regression, Decision Trees and Random Forests were implemented in scikit-learn. Hyperparameter tuning optimized performance.
 
-<!-- ![Structured Dataset](images/dataprep/5-structureddataset.png)  -->
+![Structured Dataset](images/dataprep/5-structureddataset.png) 
 
 ## Results
-### - The Random Forest classifier achieved 84% accuracy on the test set, outperforming other algorithms. 
+- The Random Forest classifier achieved 84% accuracy on the test set, outperforming other algorithms. 
 
 
-### - Payload mass, booster version and launch site emerged as important predictors. These models provide a quantitative approach to support SpaceX operations.
+- Payload mass, booster version and launch site emerged as important predictors. These models provide a quantitative approach to support SpaceX operations.
 
 
 ## Visualizations
