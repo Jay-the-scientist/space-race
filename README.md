@@ -48,6 +48,24 @@ Data wrangling cleaned and standardized values. EDA explored relationships. Mode
 
 ![Payload Mass v Mission Type by Booster Version](images/interactivemaps/17-dashboard-payloadmass-vs-boosterversion.png)
 
+### Examining the confusion matrix, we see that logistic regression can distinguish between the different classes.  We see that the problem is false positives.
+
+Overview:
+
+True Postive - 12 (True label is landed, Predicted label is also landed)
+
+False Postive - 3 (True label is not landed, Predicted label is landed)
+
+![Confusion Matrix](images/machinelearning/19-logreg-confusionmatrix.png)
+
+
+
+### The accuracy of the different models is basically the same. This could be because the dataset is relatively small
+
+![Machine Learning Outcome](images/machinelearning/20-bestclassificationscore.png)
+
+But the highest accuracy was the tree model with the foltuned hpyerparameters :(best parameters)  {'criterion': 'gini', 'max_depth': 2, 'max_features': 'sqrt', 'min_samples_leaf': 2, 'min_samples_split': 5, 'splitter': 'best'}
+accuracy : 0.875
 
 ## Conclusions
 
